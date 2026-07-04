@@ -100,10 +100,12 @@
 <!-- ===================== PANE 1: OPERATIONS ===================== -->
 <div class="pane active" id="pane0">
 
+<div class="sub" style="margin-bottom:14px">Источники: <b style="color:var(--text)">ПРОЕКТЫ</b> сегодня 09:12 · <b style="color:var(--text)">ТЕНДЕРЫ</b> сегодня 08:47 · <b style="color:var(--text)">БЮДЖЕТЫ</b> вчера 18:40 · <b style="color:var(--warn)">НЕЙРОСЕТИ 2 дня назад ⚠</b> — система сама знает, каким цифрам можно верить.</div>
+
 <div class="grid kpis">
   <div class="card kpi"><div class="label">Выручка с начала года</div><div class="value">412,4 млн ₽</div><div class="delta up">▲ 8% к плану</div></div>
   <div class="card kpi"><div class="label">Маржа по студии</div><div class="value">7,1%</div><div class="delta down">▼ 0,9 п.п. к плану · −3,7 млн ₽</div></div>
-  <div class="card kpi"><div class="label">Касса на сегодня</div><div class="value">31,2 млн ₽</div><div class="delta warncol">⚠ прогноз разрыва в августе</div></div>
+  <div class="card kpi"><div class="label">Касса на сегодня</div><div class="value">31,2 млн ₽</div><div class="delta"><span class="warncol">⚠ прогноз разрыва в августе</span> · <span class="down">просрочены 2 счёта — 6,1 млн ₽</span></div></div>
   <div class="card kpi"><div class="label">Проекты / тендеры в работе</div><div class="value">14 / 6</div><div class="delta"><span class="down">3 вне сметы</span> · <span class="warncol">ближайшая сдача тендера: чт 12:00</span></div></div>
 </div>
 
@@ -111,14 +113,14 @@
   <div class="card">
     <h2>Маржа по активным проектам <small>план/факт смет · live</small></h2>
     <table>
-      <tr><th>Проект</th><th>Направление</th><th>Смета, план</th><th>Факт + прогноз</th><th>Маржа</th><th>Статус</th></tr>
-      <tr class="alert"><td>ТВ-шоу «Прожектор», сезон 3</td><td>TV</td><td>96,0</td><td>104,3</td><td>2,1%</td><td><span class="pill over">🔴 Вне сметы</span></td></tr>
-      <tr><td>Бренд-кампания «Северный банк»</td><td>Digital & Branded</td><td>38,5</td><td>37,9</td><td>13,8%</td><td><span class="pill ok">🟢 ОК</span></td></tr>
-      <tr class="alert"><td>Док «Завод. Перезапуск»</td><td>Doc</td><td>22,0</td><td>25,1</td><td>−1,4%</td><td><span class="pill over">🔴 Вне сметы</span></td></tr>
-      <tr><td>YouTube-шоу «Глубокий вопрос»</td><td>Digital & Branded</td><td>18,4</td><td>18,1</td><td>11,2%</td><td><span class="pill ok">🟢 ОК</span></td></tr>
-      <tr><td>Ивент «Матч сезона»</td><td>Sport</td><td>44,0</td><td>45,6</td><td>5,3%</td><td><span class="pill risk">🟡 Внимание</span></td></tr>
-      <tr class="alert"><td>Сериал «Портовый», пилот</td><td>TV</td><td>31,0</td><td>34,0</td><td>0,8%</td><td><span class="pill over">🔴 Вне сметы</span></td></tr>
-      <tr><td>Бренд-ролик «Ярко Косметикс»</td><td>Digital & Branded</td><td>12,6</td><td>12,2</td><td>15,1%</td><td><span class="pill ok">🟢 ОК</span></td></tr>
+      <tr><th>Проект</th><th>Направление</th><th>Этап</th><th>Смета, план</th><th>Факт + прогноз</th><th>Маржа</th><th>Светофор</th></tr>
+      <tr class="alert"><td>ТВ-шоу «Прожектор», сезон 3</td><td>TV</td><td>Продакшн</td><td>96,0</td><td>104,3</td><td>2,1%</td><td><span class="pill over">🔴 Вне сметы</span></td></tr>
+      <tr><td>Бренд-кампания «Северный банк»</td><td>Digital & Branded</td><td>Постпродакшн</td><td>38,5</td><td>37,9</td><td>13,8%</td><td><span class="pill ok">🟢 ОК</span></td></tr>
+      <tr class="alert"><td>Док «Завод. Перезапуск»</td><td>Doc</td><td>Продакшн</td><td>22,0</td><td>25,1</td><td>−1,4%</td><td><span class="pill over">🔴 Вне сметы</span></td></tr>
+      <tr><td>YouTube-шоу «Глубокий вопрос»</td><td>Digital & Branded</td><td>Продакшн</td><td>18,4</td><td>18,1</td><td>11,2%</td><td><span class="pill ok">🟢 ОК</span></td></tr>
+      <tr><td>Ивент «Матч сезона»</td><td>Sport</td><td>Препродакшн</td><td>44,0</td><td>45,6</td><td>5,3%</td><td><span class="pill risk">🟡 Внимание</span></td></tr>
+      <tr class="alert"><td>Сериал «Портовый», пилот</td><td>TV</td><td>Постпродакшн</td><td>31,0</td><td>34,0</td><td>0,8%</td><td><span class="pill over">🔴 Вне сметы</span></td></tr>
+      <tr><td>Бренд-ролик «Ярко Косметикс»</td><td>Digital & Branded</td><td>Разработка</td><td>12,6</td><td>12,2</td><td>15,1%</td><td><span class="pill ok">🟢 ОК</span></td></tr>
     </table>
   </div>
   <div class="card">
@@ -327,6 +329,11 @@ const QA = [
     q: "Кто перегружен на следующей неделе?",
     keys: ["перегруж","загруз","команд","люди"],
     a: "Загрузка на следующую неделю:\n\n• Продюсеры — 96% 🔴 (узкое место: параллельно «Прожектор», «Матч сезона» и 2 пресейла)\n• Пост-продакшн — 88% 🟡 (правки по «Портовому» съедают резерв)\n• Съёмочные группы — 64% 🟢\n• Графика/дизайн — 52% 🟢\n\nРекомендация: пресейлы недели передать свободному продюсеру «Глубокого вопроса» — у него окно после сдачи выпуска."
+  },
+  {
+    q: "Что сдаём по тендерам на этой неделе?",
+    keys: ["тендер","сдаём","сдать","пресейл"],
+    a: "Сдачи тендеров на этой неделе — 2:\n\n1. «Трэвел-шоу» (стриминг-платформа) — четверг, 12:00. Презентация готова, тизер на монтаже. ⚠ Риск: монтажёр занят «Прожектором» до среды.\n2. «Спортивная стажировка» (букмекер) — пятница, 18:00. Внутренняя смета готова, клиентская — на согласовании у финменеджера.\n\nДоля побед за квартал: 38% (5 из 13). Чаще всего проигрываем по срокам сдачи просчёта, не по цене."
   },
   {
     q: "Сколько тратим на нейросети и на что?",
